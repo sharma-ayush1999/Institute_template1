@@ -1,0 +1,123 @@
+@import "font";
+@import "color";
+
+@include media(tablet-landscape){
+    .menu-block{
+        display: none;
+    }
+    .menu-label{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0.5em;
+        }
+    .icon-row-search{
+        padding: 2rem;
+    }
+    .icon-row-cart{
+        padding: 1rem;
+    }
+}
+
+.menu-icon{
+    font-size: 1em;
+    color: map-get($text-color, h2);
+}
+.icon-row-search{
+    top: 2.9rem;
+    right: 14%;
+    i{
+        font-size: 1.5em;
+    }
+
+}
+.icon-row-cart{
+    top: 2.9rem;
+    right: 11.6%;
+    i{
+        font-size: 1.5em;
+    }
+
+}
+ .menu{
+    background-color: #edebeb;
+    height: 100px;
+    position: sticky;
+    z-index: 20;
+    top: 0;
+}
+.menu-content{
+    color: map-get($text-color, h2);
+    font-size: 1.1rem;
+    line-height: 24px;
+    padding: 10px 20px;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+.menu-items{
+    margin-top: 34px;
+    margin-left: 18em;
+    
+}
+
+@mixin menu-dropdown(){
+    top: 66px;
+    left: 0%;
+    padding: 1rem;
+    width: 19rem;
+    background: map-get($background-color, h2);
+    box-shadow: 2px rgba(206, 202, 202, 0.938);
+    z-index: 2;
+}
+.menu-dropdown-content{
+    padding: 10px;
+    }
+.menu-dropdown-content a{
+    color: #000;
+    font-size: 1.1rem;
+}   
+.menu-dropdown{
+    @include menu-dropdown();
+    display: none;
+    position: absolute;
+
+}
+@mixin menu-hover(){
+    .menu-dropdown{
+        display: block;
+    }
+    .menu-content,i{
+        color: map-get($text-color, h4 );
+        } 
+}
+
+.menu-dropdown-first:hover{
+     @include menu-hover();
+    
+}
+.menu-dropdown-second:hover{
+    @include menu-hover();
+}
+
+.menu-dropdown-third:hover{
+    @include menu-hover();
+}
+.menu-dropdown-forth:hover{
+    @include menu-hover();
+}
+.menu-dropdown-fifth:hover{
+    @include menu-hover();
+}
+@mixin color-chng() {
+    a,i{
+    color: map-get($text-color, h4 );
+    }
+}
+.menu-forum1:hover{
+    @include color-chng();
+}
+.menu-forum2:hover{
+    @include color-chng();
+}
+.menu-forum3:hover{
+    @include color-chng();
+}

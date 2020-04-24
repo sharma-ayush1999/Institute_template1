@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Francois+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
+.student_block-content {
+  width: 50%;
+}
+
+.student_block-img {
+  width: 100%;
+  height: 500px;
+}
+
+.student_block-overlay1 {
+  top: 0%;
+  height: 500px;
+  width: 100%;
+  background-color: #ff360085;
+}
+
+.student_block-overlay2 {
+  top: 0%;
+  height: 500px;
+  width: 100%;
+  background-color: #5a5af3e6;
+}
+
+.student_block-text {
+  z-index: 10;
+  text-align: center;
+  top: 17%;
+  width: 100%;
+}
+
+.student_block-text h3 {
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.student_block-text p {
+  color: white;
+  width: 90%;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+
+.std_icon-video {
+  font-size: 2rem;
+  margin-top: 2em;
+  font-size: 2em;
+}
+
+.std_icon {
+  top: 10%;
+}
+
+.student_block-sub {
+  z-index: 1;
+  top: 52%;
+  left: 20rem;
+}
+
+.student_block-sub img {
+  width: 77%;
+  border: 6px solid #6f6fdb;
+  border-radius: 50%;
+}
+
+.student_block-sub--text {
+  top: 16%;
+  left: 7rem;
+  width: 154%;
+}
+
+.student_block-sub--text h4 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.student_block-sub--text p {
+  color: #ffffff9c;
+}
+/*# sourceMappingURL=student_block.css.map */

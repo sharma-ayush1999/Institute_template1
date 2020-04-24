@@ -1,0 +1,80 @@
+@import "font";
+
+.student_block-content{
+    width: 50%;
+}
+.student_block-img{
+    width: 100%;
+    height: 500px;
+}
+
+@mixin overlay() {
+    top: 0%;
+    height: 500px;
+    width: 100%;
+}
+.student_block-overlay1{
+    @include overlay();
+    background-color:#ff360085;
+
+}
+.student_block-overlay2{
+   @include overlay();
+   background-color: #5a5af3e6;
+}
+.student_block-text{
+    z-index: 10;
+    text-align: center;
+    top: 17%;
+    width: 100%;
+    
+    h3{
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 2.5rem;
+        color: white;
+        font-family: 'Anton', sans-serif;
+    }
+    p{
+        color: white;
+        width: 90%;
+        text-align: center;
+        margin: 0px auto;
+        margin-top: 20px;
+       
+    }
+    
+}
+.std_icon-video{
+    font-size: 2rem;
+    margin-top: 2em;
+    font-size: 2em;
+}
+.std_icon{
+    top: 10%;
+}
+.student_block-sub{
+    z-index: 1;
+    top: 52%;
+    left: 20rem;
+    
+    img{
+        width: 77%;
+        border: 6px solid #6f6fdb;
+        border-radius: 50%;
+    }
+}
+.student_block-sub--text{
+    top: 16%;
+    left: 7rem;
+    width: 154%;
+    
+    h4{
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    p{
+        color: #ffffff9c;
+    }
+}

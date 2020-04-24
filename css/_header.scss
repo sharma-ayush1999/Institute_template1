@@ -1,0 +1,77 @@
+@import "color";
+@import "mediaquery";
+
+.logo-img{
+    margin-top: 27px;
+}
+.header-icon{
+    color: map-get($text-color, h4 );
+}
+.header{
+    @include media(tablet-landscape){
+        display: none;
+    }
+    background-color: map-get($background-color, h1);
+    color: map-get($text-color, h1 );
+
+    .navbar{
+        padding: 10px 10px 10px 10px;
+        height: 1.8rem;
+        align-items: center;
+    }
+    .navbar-content{
+        padding-left: 18px;
+        padding-right: 18px;
+
+    }
+}
+.hover-event_link{
+        color: map-get($text-color, h1 );
+}
+.nav-hover{
+    width: 14rem;
+    position: absolute;
+    top: 22px;
+    left: 1.5rem;
+    height: 63px;
+    color: map-get($text-color, h2);
+    z-index: 31;
+    padding: 17px;
+    background-color: map-get($background-color, h12 );
+    display: none;
+    
+    
+}  
+.nav-hover_content:nth-child(1){
+    border-bottom: 1px solid rgb(233, 230, 230);
+}
+.nav-hover_content{
+    padding: 8px;
+    padding-left: 0px;
+    padding-top: 4px;
+    a{
+        color: #000;
+    }
+
+}
+.hover-event:hover{
+        .hover-event_link{
+            color: map-get($text-color, h4 );
+        }
+        .nav-hover{
+        display: block;
+        }
+    
+}
+.nav-hover_content:hover{
+    .nav-hover_content_link{
+        color: map-get($text-color, h4 );
+    }
+}
+
+.nav-left{
+    border-right: 0.5px solid grey;
+}
+.nav-left-content{
+    border-left: 0.5px solid grey;
+}

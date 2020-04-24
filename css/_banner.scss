@@ -1,0 +1,75 @@
+@import "font";
+@import "color";
+@import "button";
+@mixin banner_icon(){
+    top: 40%;
+    font-size: 4rem;
+ }
+.banner_icon-link{
+    color: #ffffff8f;
+}
+.banner_icon-right{
+    @include banner_icon();
+      right: 1em;
+}
+.banner_icon:hover{
+    color: rgb(190, 181, 181);
+}
+.banner_icon-left{
+    @include banner_icon();
+    left: 1em;
+}
+.banner_img{
+    height: 800px;
+    width: 100%;
+}
+.banner_heading{
+       top: 300px;
+       left: 32%;
+}
+.banner_heading-area{
+    font-size: 5em;
+    font-family: 'Alfa Slab One', cursive;
+    color: map-get($text-color, h3);
+}
+.banner_text{
+    top:420px;
+    left: 30%;
+    width: 52%;
+    color: map-get($text-color, h3);
+}
+.banner_text-area{
+    font-size: 1.4em;
+    text-align: center;
+}
+.banner_button1{
+    button{
+        @include btn-red;
+    }
+}
+.banner_button1:hover{
+    button{
+        background-color: rgb(162, 238, 87);
+    }
+}
+.banner_button2{
+    button{
+        @include btn-transparent;
+    }
+}
+.banner_button2:hover{
+    button{
+        background-color: rgb(241, 208, 59);
+        border: 2px solid rgb(241, 208, 59);
+    }
+}
+.banner_button{
+    top: 65%;
+    left: 53em;
+    
+}
+.bnr-btn{
+    width: 26em;
+    display: flex;
+    justify-content: space-between;
+}

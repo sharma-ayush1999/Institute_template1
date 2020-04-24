@@ -1,0 +1,43 @@
+@import "color";
+.sole{
+    background-color: map-get($background-color, h11 );
+    height: 70px;
+    
+}
+.sole_content{
+    width: 80%;
+    margin: 0px auto;
+    border-top: 1px solid #3f3c3c9e;
+}
+@mixin sole(){
+    color:map-get($text-color, h1 );
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+.sole_content-area{
+    margin-top: 2rem;
+    h3{
+        @include sole();
+    }
+    a{
+        @include sole();
+    }
+}
+.sole_content-area a:hover{
+         color: map-get($text-color, h4 );
+         transition: 0.5s ease-in-out;
+}
+
+.sole-icon{
+    left: 90em;
+    top: 18px;
+    i{
+        color: honeydew;
+    }
+}
+.sole_icon-content{
+    padding: 1.4em;
+}
+.sole_icon-content:hover{
+    color: rgb(145, 231, 58);
+}

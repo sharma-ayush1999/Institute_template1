@@ -1,0 +1,85 @@
+@import "header";
+@import "menu";
+@import "font";
+@import "mediaquery";
+@import "banner";
+@import "basic_info";
+@import "add_info";
+@import "courses";
+@import "why_us";
+@import "student_block";
+@import "news";
+@import "footer";
+@import "main_footer";
+@import "sole";
+@import "fontawesome";
+@import "solid";
+@import "regular";
+@import "brands";
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+i{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.icon_up{
+    position: fixed;
+    margin-top: 50rem;
+    margin-left: 110rem;
+    font-size: 4rem;
+    z-index: 50;
+    color: #8d8a8a6b;
+}
+.icon_up:hover{
+    color: rgb(235, 233, 233);
+}
+label{
+    width: 100%;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+  }
+*{
+    font-family: $font-family;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0px 0px 0px 0px;
+}
+.overflow{
+    overflow: hidden;
+}
+
+.overlay{
+    background-color: black;
+    opacity: 0.3;
+}
+.background-img{
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+    .content-area{
+         width: 80%;
+         margin: 0px auto;
+         display: flex;
+         justify-content: space-between;
+
+}

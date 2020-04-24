@@ -1,0 +1,127 @@
+@import "font";
+@import "color";
+.icon-cap{
+    color: #fcfafa;
+    font-size: 2em;
+    text-align: center;
+    width: 91%;
+    font-size: 2em;
+}
+
+.courses_img{
+    height: 800px;
+}
+.courses_area{
+    margin: 0px auto;
+    top: 126px;
+    left: 44rem;
+}
+.courses_heading{
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 3px;
+    color: map-get($text-color, h3 );
+}
+.courses_material{
+    top: 32%;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.courses_material-area{
+    width: 22%;
+    height: 173px;
+    overflow: hidden;
+}
+.courses_material-upper{
+    display: flex;
+    top: 104px;
+    width: 100%;
+    left: 1em;
+    a{
+        color: #fff;
+        margin-top: 1.2em;
+        margin-left: 1em;
+        font-size: 1.1em;
+    }
+    a:hover{
+        color: rgb(92, 241, 92);
+    }
+}
+@mixin courses_material-down(){
+    background-color: #fff;
+    z-index: 1;
+    width: 22%;
+    height: 260px;
+    top: 100%;
+
+}
+.courses_material-down1{
+    @include courses_material-down();
+    left: 2.4%;
+}
+.courses_material-down2{
+    @include courses_material-down();
+    left: 26.8%;
+}
+.courses_material-down3{
+    @include courses_material-down();
+    left: 51.3%;
+}
+.courses_material-down4{
+    @include courses_material-down();
+    left: 75.6%;
+}
+.courses_material-down--text{
+    padding: 2em;
+    a{
+        color: #000;
+        font-size: 1.2em;
+        font-weight: bold;
+        line-height: 2;
+    }
+    p{
+        margin-top: 1.6em;
+        line-height: 2;
+    }
+}
+.courses_material-down--text a:hover{
+    color: rgb(88, 190, 88);
+}
+.rating{
+    border-bottom: 1px solid #e7e1e1;
+    width: 90%;
+    margin: 0px auto;
+    p{
+        margin-left: 1em;
+        margin-bottom: 10px;
+        color: #5c5f5c;
+    }
+    i{
+        color: rgb(201, 206, 201);
+        }
+}
+.course-comment{
+    justify-content: space-between;
+    padding: 1em;
+    p{
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-top: -1px;
+    
+    }
+}
+
+.courses_material-img{
+    width: 100%;
+}
+.courses_overlay{
+    width: 100%;
+    height: 100%;
+}
+.courses_material-sub--img{
+    border-radius: 50%;
+    width: 22%;
+    height: 15%;
+}

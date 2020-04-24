@@ -1,0 +1,32 @@
+@import "font";
+@import "button";
+.basic_info{
+    margin-top: 78px;
+}
+.basic_img{
+    width: 73%;
+    height: 370px;
+}
+.basic_info-text{
+    width: 171%;
+}
+.basic_heading{
+    font-size: 3rem;
+    font-family: 'Francois One', sans-serif;
+}
+.basic_info-para{
+    margin-top:20px;
+}
+.basic_info-subpara{
+    margin-bottom: 10px;
+    font-size: map-get($font-size, f1 );
+    color: map-get($text-color, h1 );
+}
+.basic_info-btn{
+    @include btn-green();
+    width: 15em;
+    height: 3.6em;
+}
+.basic_info-btn:hover{
+    background-color: map-get($background-color, h1 );
+}

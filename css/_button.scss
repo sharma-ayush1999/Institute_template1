@@ -1,0 +1,22 @@
+.button{
+    font-size: 1.1em;
+    color: #fff;
+    width: 12em;
+    border: none;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+}
+@mixin btn-red(){
+    background-color: rgb(233, 62, 62);    
+}
+@mixin btn-green(){
+    background-color: #32a532;
+}
+@mixin btn-transparent{
+    width: 10em;
+    padding: 11px;
+    background-color:transparent;
+    border: 2px solid #fff;
+}

@@ -1,0 +1,79 @@
+@import "color";
+@import "font";
+
+@mixin why_us-icon(){
+    height: 59px;
+    width: 11.6%;
+    left: 36.4em;
+    text-align: center;
+    margin-top: 22px;
+
+    i{
+        font-size: 1.6em;
+        margin-top: 20px;
+    }
+}
+.why_us-icon1{
+     @include why_us-icon();
+     top: -22px;
+}
+.why_us-icon2{
+    @include why_us-icon();
+    top: 37px;
+}
+.why_us-icon3{
+    @include why_us-icon();
+    top: 96px;
+}
+.why_us-icon4{
+   @include why_us-icon();
+   top: 155px;
+}
+.why_us-icon:hover{
+    background-color: rgb(73, 170, 73);
+
+}
+
+.why_us{
+    margin: 0px auto;
+    width: 80%;
+    margin-top: 90px;
+}
+.why_us-bg-img{
+    width: 100%;
+}
+
+.why_us-content{
+    height: 235px;
+    width: 44%;
+    left: 4%;
+    top: 189px;
+    border: 1px solid black;
+    background-color: #f3f3f3;
+
+}
+.why_us-content-area{
+    height: 58px;
+    border-bottom: 1px solid black;
+    a{
+        font-size: 1.1rem;
+        color: #000;
+    }
+}
+
+.why_us-content-heading{
+    padding: 1.3em;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.why_us-content-para{
+    padding: 10px;
+    font-size: 1.1rem;
+}
+.why_us-content-heading:hover{
+   
+    background-color: map-get($background-color, h7 );
+    a{
+        color: map-get($text-color, h3 );
+    }
+}
